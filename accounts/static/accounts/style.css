@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa; /* Bootstrap light gray */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    color: #343a40; /* Bootstrap dark gray */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bg-light {
+    /* Slightly more custom feel */
+    border-radius: 0.25rem;
+    margin-bottom: 20px;
+}
+
+/* Consider removing form-control styles and relying on Bootstrap */
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da; /* Bootstrap border color */
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Bootstrap focus shadow */
+}
+
+/* Keep button styles if you need overrides */
+.btn-primary {
+    color: #fff;
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Bootstrap utility classes - no need to redefine */
+/* .mt-3, .text-center */
+
+.signup-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #6c757d; /* Bootstrap secondary text color */
+    text-align: center;
+}
+
+.signup-link a {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 0.75rem 1.25rem;
+    margin-top: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-danger p {
+    margin-bottom: 0;
+}

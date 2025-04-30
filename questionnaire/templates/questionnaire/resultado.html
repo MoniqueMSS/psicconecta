@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Resultado do Questionário{% endblock %}
+
+{% block content %}
+<div class="card p-5 shadow mx-auto" style="max-width: 700px;">
+    <h2 class="text-center mb-4">Resultado do SRQ-20</h2>
+
+    {% if resultado %}
+        <p class="text-center fs-4">Pontuação Total: <strong>{{ resultado.total_score }}</strong> de 20</p>
+        <p class="text-center fs-4 text-primary"><strong>{{ classificacao }}</strong></p>
+    {% else %}
+        <p class="text-center">Nenhum resultado encontrado.</p>
+    {% endif %}
+
+    <div class="d-grid gap-2 mt-4">
+        <a href="{% url 'srq20' %}" class="btn btn-primary">Responder Novamente</a>
+        <a href="{% url 'dashboard' %}" class="btn btn-secondary">Voltar ao Dashboard</a>
+    </div>
+</div>
+{% endblock %}
+

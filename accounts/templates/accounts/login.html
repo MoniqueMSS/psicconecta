@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center mb-4">  <div class="col-md-6">
+            <div class="card p-5 shadow">  <h2 class="card-title mb-4 text-center">Bem-vindo ao PsiConecta</h2>
+                <p class="card-text mb-3 text-center">Seu espaço para responder ao Questionário de Rastreamento de Saúde Mental (SRQ-20).</p>
+                <p class="card-text text-center">O SRQ-20 é uma ferramenta importante para identificar sinais de sofrimento psíquico e auxiliar na busca por bem-estar.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+            <div class="card p-4 shadow">
+                <h2 class="card-title mb-4 text-center">Login</h2>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <input class="form-control" type="text" name="username" placeholder="Usuário" required>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" type="password" name="password" placeholder="Senha" required>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary" type="submit">Entrar</button>
+                    </div>
+                </form>
+                <p class="mt-3 text-center signup-link">Não tem conta? <a href="{% url 'signup' %}">Cadastre-se</a></p>
+                {% if form.errors %}
+                    <div class="alert alert-danger mt-3">
+                        {% for field in form %}
+                            {% if field.errors %}
+                                {% for error in field.errors %}
+                                    <p>{{ error|escape }}</p>
+                                {% endfor %}
+                            {% endif %}
+                        {% endfor %}
+                        {% for error in form.non_field_errors %}
+                            <p>{{ error|escape }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'accounts/style.css' %}">
+{% endblock %}

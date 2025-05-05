@@ -23,7 +23,7 @@ O **PsicoConecta** é uma aplicação desenvolvida para profissionais da saúde 
 
 ## 💻 Tecnologias utilizadas
 
-- Backend: `Python, Django, JS
+- Backend: Python, Django, JS
 - Banco de Dados: Mysql
 - Bibliotecas: Bootstrap
 

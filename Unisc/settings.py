@@ -47,6 +47,7 @@ MIDDLEWARE = [
 
 # Configurações de autenticação
 AUTH_USER_MODEL = 'accounts.CustomUser'
+LOGIN_REDIRECT_URL = '/questionnaire/'
 
 ROOT_URLCONF = 'Unisc.urls'
 

@@ -1,0 +1,136 @@
+/* ==============================================
+   RESET DE ESTILOS BÁSICOS
+   ============================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    color: #333; /* Cor de texto padrão */
+    background-color: #f4f4f4; /* Cor de fundo padrão */
+    line-height: 1.6;
+}
+
+/* ==============================================
+   ESTILOS GERAIS DE LAYOUT
+   ============================================== */
+
+/* Layout de container geral */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* ==============================================
+   ESTILOS DE CABEÇALHO
+   ============================================== */
+header {
+    background-color: #4CAF50; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* ==============================================
+   ESTILOS DE NAVEGAÇÃO (MENU)
+   ============================================== */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* ==============================================
+   ESTILOS DE BOTÕES
+   ============================================== */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* ==============================================
+   ESTILOS DE LINKS
+   ============================================== */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================================
+   ESTILOS DE RODAPÉ
+   ============================================== */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* ==============================================
+   OUTROS ESTILOS GERAIS
+   ============================================== */
+
+/* Estilo de caixas de texto e campos de entrada */
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Formatação de tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
